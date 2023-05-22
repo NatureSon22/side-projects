@@ -5,49 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ce744f4aea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Calculator</title>
+    <title>Document</title>
 </head>
 <body>
-    <script defer src="index.js"></script>
+    <a href="https://github.com/NatureSon22" target="_blank"><i class="fa-brands fa-github hvr-float"></i></a>
+    <script src= "server.js" defer></script>
+    <div class="weather-app-body">
+        <div class="search-bar">
+            <i class="fa-solid fa-location-dot"></i>
+            <label for="place"></label>
+            <input name="place" type="text" placeholder="Enter Location" data-input-place>
+            <button data-search-btn><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
 
-    <div class="menu">
-        <i class="fa-solid fa-sun hvr-float"></i>
-        <a href="https://github.com/NatureSon22?tab=repositories" target="_blank"><i class="fa-brands fa-github hvr-float"></i></a>
+        <div class="predict-place" data-predict-place></div>
+        <div class="weather-represent">
+            <img class="weather-image" src="image-removebg-preview (21).png" data-image-weather>
+            <h1 class="degrees" data-degrees>0°C</h1>
+            <h3 class="description" data-description>TBD</h3>
+        </div>
+
+        <div class="weather-details">
+            <div class="humid">
+                <img class="humidity" src="humidity (3).png">
+                <div>
+                    <h3 data-humidity>TBD</h3>
+                    <h4>Humidity</h4>
+                </div>
+            </div>
+            <div class="humid">
+                <i class="fa-solid fa-wind wind-speed"></i>
+                <div>
+                    <h3 data-wind-speed>TBD</h3>
+                    <h4>Wind Speed</h4>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="calculator-body">
-        <input type="text" class="equation-bar" readonly data-equation>
-        <input type="text" class="answer-bar" readonly value="0" data-num>
-        <div class="upper-part">
-            <button data-all-clear>Ac</button>
-            <button data-delete><i class="fa-solid fa-delete-left"></i></button>
-            <button data-operation>/</button>
-            <button data-operation>*</button>
-            <button class="num" data-number>7</button>
-            <button data-number>8</button>
-            <button data-number>9</button>
-            <button data-operation>-</button>
-            <button data-number>4</button>
-            <button data-number>5</button>
-            <button data-number>6</button>
-            <button data-operation="">+</button>
-        </div>
-        <div class="lower-part">
-            <div class="lower-part-2">
-                <div class="lower-part-3">
-                    <button data-number>1</button>
-                    <button data-number>2</button>
-                    <button data-number>3</button>
-                </div>
-                <div class="lower-part-4">
-                    <button data-number>0</button>
-                    <button data-number>.</button>
-                </div>
+    <div class="resource">
+        <a href="https://openweathermap.org/" target="_blank">
+            <div class="resource-text">
+                <h2>Powered by</h2>
+                <img class="img-api" src="image-removebg-preview (20).png">
             </div>
-            <div>
-                <button class="btn-plus" data-equals>=</button>
-            </div>
-        </div>
+        </a>
     </div>
 </body>
 </html>
